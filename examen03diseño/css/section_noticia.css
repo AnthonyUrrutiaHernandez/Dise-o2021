@@ -1,0 +1,21 @@
+section {
+    grid-area: my-section;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(124, 255, 211);
+}  
+section .noticia{
+    margin-left: 1rem;
+    margin-right: 13rem;
+    color: black;
+}
+section div .imagenN{
+    width: 30%;
+    position: relative;
+    top: -10rem;
+    margin-left: 53rem;
+}
+section div .imagenN img{
+    width: 70%;
+    position: absolute;
+}
