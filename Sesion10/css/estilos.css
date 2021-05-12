@@ -1,0 +1,94 @@
+main{
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "my-header my-header"
+    "my-nav my-nav "
+    "my-section my-aside"
+    "my-footer my-footer "
+}
+header {
+    grid-area: my-header;
+    background: rgb(20, 22, 126);
+    padding-right: 2rem;
+}
+main header .is {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+main header h3{
+    margin-left: 89%;
+}
+main header h3:hover{
+    border-left:solid rgb(0, 0, 0);
+}
+main header h3:active{
+    background:rgba(42,54,59,1) ;
+}
+main header .titulo{
+    margin-left: 15rem;
+}
+main header .is{
+    text-align: end;
+}
+main header .imagen{
+    width: 30%;
+    position: relative;
+    top: -9.3rem;
+    left: 5rem;
+}
+main header .imagen img{
+    width: 30%;
+    position: absolute;
+}
+
+/*
+section {
+    grid-area: my-section;
+    background-color: white;
+    border-style: solid;
+    border-color: rgba(255,132,124,1);
+}  
+section div .imagenN{
+    width: 30%;
+    position: relative;
+    top: -8rem;
+    left: 53rem;
+}
+section div .imagenN img{
+    width: 70%;
+    position: absolute;
+}
+*/
+
+@media screen and (max-width:1000px){
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    section .info{
+        display: none;
+    }
+    main nav ul li{
+        font-size: 1.5rem;
+        padding:  0 2rem;
+        display: inline-block;
+    }
+    main aside div{
+        margin: 0 15rem;
+        border-radius: 10%;
+    }
+    footer div{
+        display: inline-flexbox;
+        padding:  0 2rem;
+        margin-top: -0.5rem;
+    }
+    main footer .imagenF{
+        display: none;
+    }
+}
